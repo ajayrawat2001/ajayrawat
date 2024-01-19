@@ -1,7 +1,7 @@
 "use client"
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../componets/particle";
-// import Techstack from "./TechStack";
+import Techstack from "../componets/TechStack";
 import Aboutcard from "../componets/AboutCard";
 import ajayrawat from "../../../public/Assets/Ajayrawat.jpeg";
 
@@ -52,7 +52,7 @@ function About() {
           Professional <strong className="purple">Skillset </strong>
         </h1>
 
-        {/* <Techstack /> */}
+        <Techstack />
       </Container>
     </Container>
   );
