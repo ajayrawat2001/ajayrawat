@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ajay rawat",
+  title: "Ajay rawat",
   description: "Created by Ajay Rawat",
 };
 
