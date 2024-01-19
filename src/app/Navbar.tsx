@@ -3,7 +3,7 @@ import Link from "next/link"
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 
 export default function NavbarComponets() {
@@ -18,7 +18,12 @@ export default function NavbarComponets() {
         }
       }
 
-      window.addEventListener("scroll", scrollHandler);
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    }
+      },[])
   return (
     <>
       <Navbar
