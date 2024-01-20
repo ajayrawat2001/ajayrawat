@@ -5,6 +5,7 @@ import NavbarComponet from "./Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const inter = Inter({ subsets: ["latin"] });
+import Footer from "./Footer";
 
 export const metadata: Metadata = {
   title: "Ajay rawat",
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <NavbarComponet />
         {children}
+        <Footer/>
       </body>
     </html>
   );
