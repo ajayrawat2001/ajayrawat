@@ -1,7 +1,7 @@
 
 import { Col, Row } from "react-bootstrap";
-import { SiTypescript } from "react-icons/si";
-import { TbBrandRedux, TbBrandReactNative } from "react-icons/tb";
+import { SiTypescript, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { TbBrandRedux } from "react-icons/tb";
 
 import {
   DiJavascript1,
@@ -9,7 +9,6 @@ import {
   DiHtml5,
   DiCss3,
   DiBootstrap,
-
 } from "react-icons/di";
 import { FaSass } from "react-icons/fa";
 
@@ -29,6 +28,9 @@ function Techstack() {
         <DiBootstrap color="a15ef1" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiTailwindcss color="skyblue" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiReact color="skyblue" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -39,6 +41,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaSass color="#e74b66" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNextdotjs color="#00000" />
       </Col>
     </Row>
   );
